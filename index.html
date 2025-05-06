@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      #main-content {
+        position: relative;
+        min-height: 100vh;
+      }
+      
+      header {
+        background-color: #000000;
+        color: #ff0000;
+        text-align: center;
+        padding: 15px;
+      }
+      
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #000000;
+        padding: 15px;
+        text-align: center;
+      }
+      
+      .btn {
+        display: inline-block;
+        background-color: #000000;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+      }
+      
+      .btn:hover {
+        background-color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+      <header>
+        <h1>t1M3i$g0ld</h1>
+      </header>
+      
+      <div id="sketch-container">
+        <!-- P5.js content will render here -->
+      </div>
+      
+      <footer>
+        <!-- Using the button element for more reliable clicking -->
+        <button class="btn" onclick="location.href='photobooth.html'">Open Photo Booth</button>
+      </footer>
+    </div>
+    
+    <script src="sketch.js"></script>
+  </body>
+</html>
